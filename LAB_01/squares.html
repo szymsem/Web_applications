@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ćwiczenie 3: Kolorowe kwadraty</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: 2 2;
+        gap: 10px;
+        justify-content: center;
+        margin: 20px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: blue;
+      }
+      .box3 {
+        background-color: green;
+      }
+      /*
+      .box4 {
+        background-color: yellow;
+      }
+        */
+      .box5 {
+        background-color: purple;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+      }
+      .box3 {
+        grid-column: 1;
+      }
+      .box5 {
+        grid-column: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Kolorowe kwadraty</h1>
+    <div class="container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <img src="image.png" alt="Obrazek" />
+      <div class="box box5"></div>
+    </div>
+  </body>
+</html>
